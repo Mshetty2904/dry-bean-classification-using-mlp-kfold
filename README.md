@@ -196,7 +196,7 @@ Despite moderate class imbalance, the dataset provides sufficient representation
 ## Error Reduction During Training
 
 <p align="center">
-  <img src="images/avg_error_curve.png" width="700">
+  <img src="images/error_vs_epoch.png" width="700">
 </p>
 
 ### Key Observation
@@ -232,7 +232,7 @@ As training progresses, the network refines subtle distinctions among bean varie
 ## 📈 Training Accuracy Progression
 
 <p align="center">
-  <img src="images/avg_training_accuracy.png" width="700">
+  <img src="images/training_vs_epoch.png" width="700">
 </p>
 
 ### Key Observation
@@ -264,7 +264,7 @@ The model successfully transforms raw measurements into meaningful classificatio
 ## K-Fold Accuracy
 
 <p align="center">
-  <img src="images/fold_accuracy.png" width="700">
+  <img src="images/k-fold_accuracy.png" width="700">
 </p>
 
 ### Fold-wise Accuracy
@@ -333,7 +333,7 @@ These classes share similar geometric properties, increasing classification comp
 # 📈 Class-wise Performance Metrics
 
 <p align="center">
-  <img src="images/classwise_metrics.png" width="800">
+  <img src="images/class_wise_metrics.png" width="800">
 </p>
 
 ### Performance Summary
