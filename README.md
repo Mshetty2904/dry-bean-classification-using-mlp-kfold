@@ -1,10 +1,5 @@
 # 🌱 Dry Bean Classification Using Multi-Layer Perceptron (MLP) with 5-Fold Cross Validation
 
-<p align="center">
-  <img src="images/class_distribution.png" width="700">
-</p>
-
-<p align="center">
   <b>Automated Agricultural Classification using Artificial Neural Networks</b><br>
   Morphological Feature Analysis • Neural Networks • Cross Validation • Agricultural Intelligence
 </p>
