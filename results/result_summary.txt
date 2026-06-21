@@ -1,0 +1,269 @@
+Dry Bean Classification Using MLP with 5-Fold Cross Validation Results
+
+Dataset:
+Dry Bean Dataset
+
+Total Samples:
+13,611
+
+Number of Classes:
+7
+
+Bean Classes:
+- BARBUNYA
+- BOMBAY
+- CALI
+- DERMASON
+- HOROZ
+- SEKER
+- SIRA
+
+Class Distribution:
+
+DERMASON : 3546
+SIRA     : 2637
+SEKER    : 2027
+HOROZ    : 1928
+CALI     : 1630
+BARBUNYA : 1322
+BOMBAY   : 521
+
+Input Features:
+16 Morphological Features
+
+Major Features:
+- Area
+- Perimeter
+- Major Axis Length
+- Minor Axis Length
+- Aspect Ratio
+- Compactness
+- Eccentricity
+- Convex Area
+- Equivalent Diameter
+- Shape Factors
+
+Preprocessing:
+- Label Encoding
+- Min-Max Normalization
+- Feature Scaling between 0 and 1
+
+Neural Network Architecture:
+
+Input Layer:
+16 Neurons
+
+Hidden Layer 1:
+64 Neurons
+
+Hidden Layer 2:
+32 Neurons
+
+Hidden Layer 3:
+16 Neurons
+
+Output Layer:
+7 Neurons
+
+Activation Function:
+Sigmoid
+
+Training Parameters:
+
+Learning Rate:
+0.05
+
+Epochs:
+125
+
+Optimizer:
+Gradient Descent (Custom Backpropagation)
+
+Loss Function:
+Sum of Squared Error (SSE)
+
+Random Seed:
+1
+
+Validation Method:
+5-Fold Cross Validation
+
+Training Performance:
+
+Initial Training Accuracy:
+Approximately 24%
+
+Final Training Accuracy:
+Approximately 87%
+
+Initial Error:
+Approximately 9100
+
+Final Error:
+Approximately 1800
+
+Observation:
+- Training error decreases consistently
+- Training accuracy increases steadily
+- Stable convergence achieved
+- Successful learning throughout training
+
+K-Fold Cross Validation Results:
+
+Fold 1 Accuracy:
+91.6%
+
+Fold 2 Accuracy:
+91.3%
+
+Fold 3 Accuracy:
+85.5%
+
+Fold 4 Accuracy:
+91.8%
+
+Fold 5 Accuracy:
+90.7%
+
+Average Cross Validation Accuracy:
+90.18%
+
+Overall Evaluation Metrics:
+
+Accuracy:
+90.18%
+
+Macro Precision:
+0.92
+
+Macro Recall:
+0.90
+
+Macro F1 Score:
+0.90
+
+Class-wise Performance:
+
+BARBUNYA
+Precision : 0.87
+Recall    : 0.93
+F1 Score  : 0.90
+
+BOMBAY
+Precision : 1.00
+Recall    : 0.77
+F1 Score  : 0.87
+
+CALI
+Precision : 0.92
+Recall    : 0.93
+F1 Score  : 0.92
+
+DERMASON
+Precision : 0.95
+Recall    : 0.86
+F1 Score  : 0.90
+
+HOROZ
+Precision : 0.97
+Recall    : 0.93
+F1 Score  : 0.95
+
+SEKER
+Precision : 0.91
+Recall    : 0.96
+F1 Score  : 0.94
+
+SIRA
+Precision : 0.80
+Recall    : 0.90
+F1 Score  : 0.85
+
+Best Performing Classes:
+
+HOROZ
+- Precision: 0.97
+- Recall: 0.93
+- F1 Score: 0.95
+
+SEKER
+- Precision: 0.91
+- Recall: 0.96
+- F1 Score: 0.94
+
+CALI
+- Precision: 0.92
+- Recall: 0.93
+- F1 Score: 0.92
+
+Most Challenging Classes:
+
+SIRA
+- Precision: 0.80
+- Recall: 0.90
+- F1 Score: 0.85
+
+BOMBAY
+- Precision: 1.00
+- Recall: 0.77
+- F1 Score: 0.87
+
+Confusion Matrix Highlights:
+
+Correct Classifications:
+
+BARBUNYA : 1227
+BOMBAY   : 403
+CALI     : 1508
+DERMASON : 3032
+HOROZ    : 1784
+SEKER    : 1941
+SIRA     : 2376
+
+Common Misclassifications:
+
+Actual BARBUNYA → CALI
+Actual CALI → BARBUNYA
+
+Actual DERMASON → SIRA
+Actual SIRA → DERMASON
+
+Actual HOROZ → SIRA
+
+Prediction Distribution:
+
+DERMASON : ~3200
+SIRA     : ~3000
+SEKER    : ~2100
+HOROZ    : ~1800
+CALI     : ~1650
+BARBUNYA : ~1400
+BOMBAY   : ~400
+
+Generated Outputs:
+
+- Class Distribution Plot
+- Average Error vs Epoch Curve
+- Average Training Accuracy Curve
+- K-Fold Accuracy Plot
+- Confusion Matrix
+- Predictions per Class Plot
+- Precision, Recall and F1 Score Plot
+
+Applications:
+
+- Agricultural Automation
+- Bean Sorting Systems
+- Food Processing Industry
+- Quality Control
+- Export Quality Assessment
+- Smart Farming
+- Agricultural Research
+
+Key Insight:
+
+Morphological characteristics contain sufficient discriminatory information to accurately classify dry bean varieties. The combination of Min-Max Normalization, Multi-Layer Perceptron Neural Network, Backpropagation Learning, and 5-Fold Cross Validation provides a robust and reliable framework for automated agricultural classification.
+
+Final Conclusion:
+
+A custom Multi-Layer Perceptron Neural Network with architecture 16–64–32–16–7 achieved approximately 90.18% average cross-validation accuracy on the Dry Bean Dataset. The model successfully learned morphological patterns of seven bean varieties and demonstrated strong classification performance, highlighting the effectiveness of neural networks for agricultural automation, crop quality assessment, and intelligent bean classification systems.
